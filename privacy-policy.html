@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>同時視聴タイマー プライバシーポリシー</title>
+  <style>
+    :root { color-scheme: light dark; --text: #1c2230; --muted: #5d6677; --bg: #ffffff; --line: #d5d9e0; }
+    @media (prefers-color-scheme: dark) { :root { --text: #e8ebf1; --muted: #9aa3b2; --bg: #171a21; --line: #363c48; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.8 "BIZ UDPGothic", "Yu Gothic UI", "Hiragino Sans", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 48px 20px 64px; }
+    h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 2.2em 0 0.6em; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+    p, li { margin: 0.5em 0; }
+    table { width: 100%; border-collapse: collapse; margin: 0.8em 0; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--line); }
+    .date { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>同時視聴タイマー プライバシーポリシー</h1>
+    <p class="date">制定日: 2026年10月20日</p>
+
+    <p>Chrome 拡張機能「同時視聴タイマー」(以下「本拡張機能」)が扱う情報と、その扱い方を説明します。</p>
+
+    <h2>外部への送信はしません</h2>
+    <p>本拡張機能は、読み取った情報や設定を開発者や第三者のサーバーへ送信しません。広告・アクセス解析・トラッキングの仕組みも使っていません。</p>
+    <p>例外として、利用者が「OBS 連携」を有効にした場合に限り、利用者が設定した OBS Studio の WebSocket サーバー(通常はこのパソコン上の 127.0.0.1)へ、表示する時刻やタイトルなどの文字を送ります。</p>
+
+    <h2>読み取る情報</h2>
+    <table>
+      <tr><th>情報</th><th>目的</th></tr>
+      <tr><td>開いているタブの URL とタイトル</td><td>動画のあるタブを探し、表示対象の候補として一覧に出すため</td></tr>
+      <tr><td>動画ページの動画のタイトル・話数・再生時刻・再生状態</td><td>タイマーに表示し、OBS へ出力するため</td></tr>
+      <tr><td>パソコンに入っているフォントの名前(利用者が読み込みを許可した場合のみ)</td><td>表示に使うフォントを一覧から選べるようにするため</td></tr>
+    </table>
+    <p>本拡張機能は、利用者の操作に応じて動画の再生・一時停止・再生位置の移動を行います。ページ内のそれ以外の内容を読み取ったり変更したりはしません。</p>
+
+    <h2>保存する情報</h2>
+    <p>次の情報を、このブラウザの拡張機能用ストレージ(chrome.storage.local)に保存します。保存先はこのパソコンのブラウザ内だけです。</p>
+    <ul>
+      <li>表示・デザイン・カウントダウン・OBS 連携の設定</li>
+      <li>OBS 連携のパスワード(利用者が入力した場合。暗号化はしていません)</li>
+      <li>動画ごとの「0点」(動画ページの URL と、0:00 にした再生位置。新しいものから最大30件)</li>
+      <li>デザインのプリセット</li>
+      <li>見る人用の時刻ジャンプの補正秒数</li>
+    </ul>
+    <p>これらは本拡張機能をブラウザから削除すると消去されます。</p>
+
+    <h2>第三者への提供</h2>
+    <p>本拡張機能が扱う情報を、販売・譲渡・共有することはありません。信用力の判断や融資の目的にも使いません。</p>
+
+    <h2>このポリシーの変更</h2>
+    <p>本拡張機能の動作を変えるときは、このページを更新し、制定日の下に更新日を記載します。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本拡張機能やこのポリシーについてのお問い合わせは、<a href="https://forms.gle/intWDXvyBe2rd13n9">お問い合わせフォーム</a>からお願いします。</p>
+  </main>
+</body>
+</html>
